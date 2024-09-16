@@ -9,7 +9,7 @@
     "lint": "eslint ./",
     "seed": "node database/seed/index",
     "seed:rollback": "node database/seed/index --rollback",
-    "test": "cross-env DATABASE_URI=mongodb://localhost:27017/recipe_app_test jest --collectCoverge --forceExit --detectOpenHandles"
+    "test": "cross-env DATABASE_URI=mongodb://localhost:27017/recipe_app_test jest --collectCoverage --forceExit --detectOpenHandles"
   },
   "jest": {
     "testEnvironment": "node"
