@@ -4,8 +4,11 @@ const cors = require('cors');
 const morgan = require('morgan');
 const routes = require('./routes/index.js');
 
-const initializeApp = ()=>{
 const app = express();
+
+const config = {
+  port: process.env.PORT || 8080,
+};
 
 // add other middleware
 app.use(cors());
@@ -19,7 +22,7 @@ app.use(bodyParser.json());
 
 app.use('/', routes);
 
-return app;
-};
-const app = initializeApp();
-module.exports = app;
+app.listen(config.port, () => {
+  // eslint-disable-next-line no-console
+  console.log('Express server listening on port', config.port);
+});
