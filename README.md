@@ -48,5 +48,3 @@ The tests, test the api endpoints to ensure that they work and return the requir
 * [Express](https://expressjs.com/) - Fast, unopinionated, minimalist web framework for Node.js
 * [MongoDB](https://www.mongodb.com/) - MongoDB is a cross-platform document-oriented database program
 * [JWT](https://www.npmjs.com/package/jsonwebtoken) - JSON Web Token for aunthentication
-### Authors
-* **Chinyelu Ibute**
